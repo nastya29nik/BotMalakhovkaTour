@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пазл игра</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="level-selection" class="screen active">
+            <h1>Выберите уровень сложности</h1>
+            <div class="levels">
+                <button class="level-btn" data-level="3">3x3 (Легкий)</button>
+                <button class="level-btn" data-level="5">5x5 (Средний)</button>
+                <button class="level-btn" data-level="10">10x10 (Сложный)</button>
+            </div>
+        </div>
+
+        <div id="game-screen" class="screen">
+            <div class="game-header">
+                <button id="back-btn">← Назад</button>
+                <span id="moves-counter">Ходы: 0</span>
+            </div>
+            <div id="puzzle-container"></div>
+        </div>
+
+        <div id="success-screen" class="screen">
+            <h1>Ты молодец!!!</h1>
+            <p>Вы собрали пазл за <span id="total-moves">0</span> ходов</p>
+            <button id="menu-btn">В меню</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
