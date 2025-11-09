@@ -7,7 +7,7 @@ let originalImage = new Image();
 // Инициализация при загрузке
 document.addEventListener('DOMContentLoaded', function() {
     // Загрузка изображения
-    originalImage.src = 'image.jpg'; // Замените на путь к вашему изображению
+    originalImage.src = 'Apteka.jpg'; // Замените на путь к вашему изображению
     originalImage.onload = function() {
         console.log('Изображение загружено');
     };
